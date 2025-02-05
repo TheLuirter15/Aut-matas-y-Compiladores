@@ -18,7 +18,7 @@ string clasificarCadena(const string& cadena) {
     }
 
     if (tieneNumeros)
-        return "Número de tipo entero";
+        return "Número entero";
     if (tieneLetras)
         return "Palabra";
 
