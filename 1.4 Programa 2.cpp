@@ -1,12 +1,5 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <iostream>
+#include <sstream>
 #include <cctype>
 
 using namespace std;
@@ -20,13 +13,12 @@ string clasificarCadena(const string& cadena) {
         else if (isalpha(c))
             tieneLetras = true;
 
-        // Si llega a tener ambos, es compuesta
         if (tieneLetras && tieneNumeros)
             return "Compuesta";
     }
 
     if (tieneNumeros)
-        return "Número de tipo entero";
+        return "Número entero";
     if (tieneLetras)
         return "Palabra";
 
@@ -34,11 +26,22 @@ string clasificarCadena(const string& cadena) {
 }
 
 int main() {
-    string entrada;
-    cout << "Ingrese una cadena: ";
-    cin >> entrada;
+    string linea, palabra;
+    int countEntero = 0, countPalabra = 0, countCompuesta = 0;
 
-cout << "Clasificación: " << clasificarCadena(entrada) << endl;
+    cout << "Ingrese una línea de texto: ";
+    getline(cin, linea);  // Se lee toda la línea
 
-return 0;
+    stringstream ss(linea);
+    
+    while (ss >> palabra) {
+        string tipo = clasificarCadena(palabra);
+        if (tipo == "Número entero") countEntero++;
+        else if (tipo == "Palabra") countPalabra++;
+        else if (tipo == "Compuesta") countCompuesta++;
+    }
+
+    cout << countEntero << " - entero, " << countPalabra << " palabra, " << countCompuesta << " compuesta" << endl;
+
+    return 0;
 }
