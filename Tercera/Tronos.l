@@ -57,11 +57,11 @@ void mostrar_resultados();
 [Ii]nvernalia        { invernalia++; }
 [Dd]esembarco[Rr]ey  { desembarco_rey++; }
 [Nn]ido[Aa]guilas    { nido_aguilas++; }
-[Aa]ltojard[ií]n     { altojardin++; }
+[Aa]ltojard[iÃ­]n     { altojardin++; }
 [Aa]guasdulces       { aguasdulces++; }
-[Rr]ocadrag[oó]n     { rocadragon++; }
+[Rr]ocadrag[oÃ³]n     { rocadragon++; }
 [Rr]oca[Cc]asterly   { roca_casterly++; }
-[Bb]asti[oó]n[Tt]ormentas { bastion_tormentas++; }
+[Bb]asti[oÃ³]n[Tt]ormentas { bastion_tormentas++; }
 [Dd]orne             { dorne++; }
 
 
