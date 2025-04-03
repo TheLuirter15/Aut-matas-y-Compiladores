@@ -38,15 +38,15 @@ int main(int argc, char *argv[]) {
     
     if (argc > 1) fclose(yyin);
     
-    printf("Estadísticas:\n");
-    printf("Total de líneas: %d\n", lineas);
+    printf("EstadÃ­sticas:\n");
+    printf("Total de lÃ­neas: %d\n", lineas);
     printf("Total de palabras: %d\n", palabras);
     printf("Total de caracteres: %d\n", caracteres);
     printf("Palabras que comienzan con 'ni': %d\n", ni_palabras);
     printf("Palabras que comienzan con 'num': %d\n", num_palabras);
     printf("Palabras que comienzan con 'B' y terminan en 'to': %d\n", B_to_palabras);
     printf("Palabras que terminan en 'jo': %d\n", jo_palabras);
-    printf("Dígitos contados como palabras: %d\n", digitos);
+    printf("DÃ­gitos contados como palabras: %d\n", digitos);
     
     return 0;
 }
