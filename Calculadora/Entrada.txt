@@ -1,0 +1,13 @@
+Validos
+
+15+15
+100-20
+20*40
+40/5
+
+No validos y dan SYNTAX ERROR
+
+-10
+19/
+*48
+18/0
