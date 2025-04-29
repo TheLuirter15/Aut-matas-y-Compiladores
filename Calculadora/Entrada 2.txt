@@ -1,0 +1,11 @@
+EJEMPLOS CORRECTOS
+select nombre from empleados where id = 5
+select nombre, salario from empleados where salario > 5000 and edad < 40
+insert into empleados values (1, 'Juan', 3000)
+delete from empleados where id = 3
+
+EJEMPLOS CON ERROR DE SINTAXIS
+select nombre empleados where id = 5             (Error: Falta FROM entre nombre y empleados)
+insert into empleados values 1, 'Ana', 2500      (Error: Faltan los paréntesis () que deben encerrar los valores)
+delete empleados where id = 2                    (Error: Falta la palabra FROM entre delete y empleados)
+select * from empleados where salario => 5000    (Error: => no es un operador válido, debería ser >=)
